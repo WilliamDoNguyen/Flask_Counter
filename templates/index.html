@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Counter" content="Assignment 4.">
+    <title>Counter</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Counter</h1>
+        <p>{{count}} times.</p>
+        <form action='/destroy_session' method='post'>
+            <button type='submit'>Reset</button>
+        </form>
+    </div>
+</body>
+
+</html>
